@@ -1,0 +1,9 @@
+#Allure
+tests/allure-results
+
+#Idea
+.idea
+
+#DS_Store
+.DS_Store
+
