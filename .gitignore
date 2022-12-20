@@ -1,9 +1,7 @@
 #Allure
 tests/allure-results
 
-#Idea
-.idea
-
-#DS_Store
+/.idea
+*.iml
 .DS_Store
 
