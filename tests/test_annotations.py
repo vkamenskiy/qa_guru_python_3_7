@@ -1,5 +1,13 @@
+import json
 import allure
+from allure import attachment_type
 from allure_commons.types import Severity
+
+
+def test_attachments():
+    allure.attach('Text content', name='Text', attachment_type=attachment_type.TEXT)
+    allure.attach('<h1>Hello, world!</h1>', name='Html', attachment_type=attachment_type.HTML)
+    allure.attach(json.dumps({'first': 1, 'second': 2}), name='Json', attachment_type=attachment_type.JSON)
 
 
 def test_dynamic_labels():
@@ -19,3 +27,6 @@ def test_dynamic_labels():
 @allure.link('https://github.com', name='Testing')
 def test_decorator_labels():
     pass
+
+
+
