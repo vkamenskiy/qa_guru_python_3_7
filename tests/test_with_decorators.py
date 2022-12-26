@@ -17,7 +17,7 @@ def open_main_page():
     browser.open('https://github.com')
 
 
-@allure.step('Ищем mрепозиторий {repo}')
+@allure.step('Ищем репозиторий {repo}')
 def search_for_repository(repo):
     browser.element('.header-search-input').click()
     browser.element('.header-search-input').send_keys(repo)
